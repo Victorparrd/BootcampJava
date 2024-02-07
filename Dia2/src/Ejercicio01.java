@@ -1,3 +1,5 @@
+package com.roshka.bootcamp.src;
+
 import java.util.Scanner;
 
 public class Ejercicio01 {

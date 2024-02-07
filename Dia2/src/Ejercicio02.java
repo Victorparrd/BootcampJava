@@ -1,4 +1,4 @@
-import java.util.*;
+package com.roshka.bootcamp.src;
 
 public class Ejercicio02 {
     public static void main(String[] args) {
