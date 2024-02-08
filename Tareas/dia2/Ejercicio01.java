@@ -1,4 +1,4 @@
-package com.roshka.bootcamp.src;
+package dia2;
 
 import java.util.Scanner;
 
