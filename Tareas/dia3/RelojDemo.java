@@ -19,5 +19,8 @@ public class RelojDemo {
         System.out.println("Segundo reloj creado: " + reloj2);
         Reloj diferencia = reloj.restaReloj(reloj2);
         System.out.println("Diferencia de tiempo: " + diferencia);
+
+        System.out.println("CAMBIO HECHO POR FER");
+        reloj2.mostrarHora(12,30,02);
     }
 }
