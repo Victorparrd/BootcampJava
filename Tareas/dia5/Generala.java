@@ -12,6 +12,8 @@ public class Generala {
             System.out.print(jugada[i]);
         }
 
+        //int[] numeros = {3,4,5,6,1};
+
         if (esGenerala(jugada)) {
             System.out.println("\nGENERALA");
         } else if (esPoker(jugada)) {
@@ -76,7 +78,7 @@ public class Generala {
     public static boolean esEscalera(int[] dados) {
         for (int i = 0; i < dados.length - 1; i++) {
             if (dados[i + 1] - dados[i] != 1) {
-                if (dados[i+1] == 1 && dados[i] == 6) {
+                if (i == 3 && dados[i + 1] == 1 && dados[i] == 6) {
                     return true;
                 } else {
                     return false;
