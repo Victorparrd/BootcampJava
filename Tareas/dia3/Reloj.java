@@ -115,4 +115,8 @@ public class Reloj {
         }
         return new Reloj(diferenciaSegundos);
     }
+
+    public void mostrarHora(int horas,int minutos,int segundos){
+        System.out.println(horas + " " + minutos + " " + segundos + " ");
+    }
 }
