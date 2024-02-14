@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+.img-1 {
+  top: 0;
+  left: 0;
+}
+
+.img-2 {
+  top: 100px;
+  left: 100px;
+}
+
+.img-3 {
+  top: 200px;
+  left: 200px;
+}
+
+.img-4 {
+  top: 300px;
+  left: 300px;
+}
+
+.img-5 {
+  top: 400px;
+  left: 400px;
+}
+
+.image-container {
+  width: 650px;
+  height: 610px;
+  margin: 0;
+  border: 5px solid black;
+  display: flex;
+}
+
+.image-wrapper {
+  position: relative;
+  margin-right: 10px;
+}
+
+.image-wrapper img {
+  width: 200px;
+  height: 200px;
+  border: 5px solid transparent;
+  transition: border-color 0.3s ease; 
+}
+
+.image-wrapper:hover img {
+  border-color: rgb(255, 0, 0); /* Cambiar color del borde al pasar el mouse sobre la imagen */
+  z-index: 1; /* Traer la imagen al frente */
+}
+
+.image-wrapper:hover ~ .image-wrapper img {
+  opacity: 0; /* Ocultar las imágenes posteriores */
+}

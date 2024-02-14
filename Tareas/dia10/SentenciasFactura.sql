@@ -3,7 +3,7 @@ SELECT c.nombre || ' ' || c.apellido AS "Cliente",
 COUNT(f.cliente_id) AS "Cant_facturas" FROM cliente c
 JOIN factura f ON c.id = f.cliente_id
 GROUP BY "Cliente"
-ORDER BY "Cant_facturas" DESC;
+ORDER BY "Cant_facturas" DESC
 LIMIT 5;
 
 --Top clientes que más gastaron
@@ -13,14 +13,14 @@ FROM cliente c JOIN factura f ON c.id = f.cliente_id
 JOIN factura_detalle d ON f.id = d.factura_id
 JOIN producto p ON d.producto_id = p.id
 GROUP BY "Cliente"
-ORDER BY "Gasto_total" DESC;
+ORDER BY "Gasto_total" DESC
 LIMIT 5;
 
 --Top monedas más utilizadas
 SELECT m.nombre, COUNT(f.moneda_id) AS "Cant_monedas" FROM moneda m
 JOIN factura f ON m.id = f.moneda_id
 GROUP BY m.nombre
-ORDER BY "Cant_monedas" DESC;
+ORDER BY "Cant_monedas" DESC
 LIMIT 5;
 
 --Top proveedor de productos
@@ -28,7 +28,7 @@ SELECT p.nombre AS "Proveedor",
 COUNT(pd.nombre) AS "Cantidad_productos" FROM proveedor p 
 JOIN producto pd ON p.id = pd.proveedor_id
 GROUP BY "Proveedor"
-ORDER BY "Cantidad_productos" DESC;
+ORDER BY "Cantidad_productos" DESC
 LIMIT 5;
 
 --Productos más vendidos
@@ -42,7 +42,7 @@ LIMIT 5;
 SELECT p.nombre AS "Producto", SUM(f.cantidad) AS "Vendidos"
 FROM producto p JOIN factura_detalle f ON p.id = f.producto_id
 GROUP BY "Producto"
-ORDER BY "Vendidos" ASC;
+ORDER BY "Vendidos" ASC
 LIMIT 5;
 
 /*
