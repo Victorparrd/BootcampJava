@@ -1,0 +1,77 @@
+body {
+    background-color: darkslategray;
+}
+
+.container {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+    width: 700px;
+    height: 750px;
+    margin:auto;
+    border: 10px solid black;
+    background-color: #f0f0f0;
+    margin-top: 70px;
+}
+
+.containerX {
+    margin-top: 10px;
+}
+
+.containerO {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 5px;
+    margin-top: 20px;
+    margin-left: 160px;
+}
+
+.cell {
+    border: 3px solid black;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: aliceblue;
+}

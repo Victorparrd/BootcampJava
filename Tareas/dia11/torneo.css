@@ -6,7 +6,7 @@ table {
 
 td,
 th {
-    border: 1px solid #dddddd;
+    border-top: #dddddd 1px solid;
     text-align: left;
     padding: 8px;
 }
@@ -18,4 +18,9 @@ tr:nth-child(even) {
 img {
     width: 30px;
     height: 30px;
-  }
+}
+
+.img-r {
+    width: 170px;
+    height: 700px;
+}
