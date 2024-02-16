@@ -1,0 +1,47 @@
+.container {
+    margin-top: 20px;
+}
+
+.form-label {
+    color: #b18f30;
+}
+
+.form-check-label {
+    color: #b18f30;
+}
+
+.form-select {
+    color: gray;
+}
+
+.form-control {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0%;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(177, 143, 48, 0.25);
+    border-color: #b18f30;
+}
+
+.form-select:focus {
+    box-shadow: 0 0 0 0.25rem rgba(177, 143, 48, 0.25);
+    border-color: #b18f30;
+}
+
+.custom-checkbox:checked {
+    background-color: #b18f30;
+    border-color: #b18f30;
+}
+
+.custom-checkbox:focus {
+    box-shadow: 0 0 0 0.25rem rgba(177, 143, 48, 0.25);
+    border-color: #b18f30;
+}
+
+.btn-secondary {
+    background-color: #b18f30;
+    border-color: #b18f30;
+}
