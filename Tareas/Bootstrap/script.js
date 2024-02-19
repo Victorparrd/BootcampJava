@@ -1,8 +1,8 @@
 document.getElementById('verificarBtn').addEventListener('click', function() {
     var tipoDoc = document.getElementById('inputTipoDoc').value;
     var inputNumeroDoc = document.getElementById('inputNumeroDoc').value;
-    var regexRuc = /^\d{6}-\d{1}$/; // Expresión regular para RUC
-    var regexSoloNumeros = /^[0-9]+$/; // Expresión regular para solo números
+    var regexRuc = /^\d{6}-\d{1}$/;
+    var regexSoloNumeros = /^[0-9]+$/;
 
     if ((tipoDoc === '1' && regexRuc.test(inputNumeroDoc)) || (tipoDoc === '2' && regexSoloNumeros.test(inputNumeroDoc))) {
         alert('El documento es válido.');

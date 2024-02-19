@@ -1,8 +1,12 @@
 .container {
-    margin-top: 20px;
+    margin-top: 50px;
+    border: 3px solid #000000;
+    border-radius: 30px;
+    border-color: #b18f30;
 }
 
 .form-label {
+    margin-top: 20px;
     color: #b18f30;
 }
 
@@ -44,4 +48,5 @@
 .btn-secondary {
     background-color: #b18f30;
     border-color: #b18f30;
+    margin: 2%;
 }
